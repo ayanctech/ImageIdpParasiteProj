@@ -28,7 +28,8 @@
         <activity android:name=".ScientificName" />
         <activity android:name=".Acknowledgements" />
         <activity android:name=".References" />
-        <activity android:name=".Plasmodium"></activity>
+        <activity android:name=".Plasmodium"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

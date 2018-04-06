@@ -1,10 +1,9 @@
 package com.example.pritamghosh.protozoan_parasite;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -48,6 +47,6 @@ public class Plasmodium extends AppCompatActivity {
             public void run() {
                 handler.post(Update);
             }
-        }, 2500, 2500);
+        }, 9500, 12500);
     }
 }
