@@ -3,4 +3,22 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="plusc">#d2d260</color>
+    <color name="sarc">#867550</color>
+    <color name="toxc">#ca32ec</color>
+    <color name="leuc">#d2606d</color>
+    <color name="besc">#da753e</color>
+    <color name="haemc">#60c3d2</color>
+    <color name="thelc">#60d26f</color>
+    <color name="cocc">#245b96</color>
+    <color name="babc">#3bba85</color>
+    <color name="tryc">#b9dc1d</color>
+    <color name="leisc">#9fe3f1</color>
+
+
+
+
 </resources>

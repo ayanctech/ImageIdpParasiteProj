@@ -28,8 +28,16 @@
         <activity android:name=".ScientificName" />
         <activity android:name=".Acknowledgements" />
         <activity android:name=".References" />
-        <activity android:name=".Plasmodium"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".Plasmodium"
+            android:screenOrientation="landscape" />
+        <activity android:name=".popup_layout"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" ></activity>
+
+        <!--
+         <activity android:name=".popup_layout"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" ></activity>
+        -->
     </application>
 
 </manifest>

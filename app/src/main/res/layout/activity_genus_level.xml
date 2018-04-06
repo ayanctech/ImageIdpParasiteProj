@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="leucocytozoon"
+            android:onClick="leucocytozoon"
             android:padding="20dp"/>
 
         <Button
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="besnoitia"
+            android:onClick="besnoitia"
             android:padding="20dp"/>
 
         <Button
@@ -57,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="haemoproteus"
+            android:onClick="haemoproteus"
             android:padding="20dp"/>
 
         <Button
@@ -64,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="coccidia"
+            android:onClick="coccidia"
             android:padding="20dp"/>
 
         <Button
@@ -71,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="babesia"
+            android:onClick="babesia"
             android:padding="20dp"/>
 
         <Button
@@ -78,6 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="theileria"
+            android:onClick="theileria"
             android:padding="20dp"/>
 
         <Button
@@ -85,6 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="leishmania"
+            android:onClick="leishmania"
             android:padding="20dp"/>
 
         <Button
@@ -92,6 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="trypanosoma"
+            android:onClick="trypanosoma"
             android:padding="20dp"/>
 
 </LinearLayout>

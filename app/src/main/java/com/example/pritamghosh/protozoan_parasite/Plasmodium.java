@@ -1,9 +1,11 @@
 package com.example.pritamghosh.protozoan_parasite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -12,6 +14,7 @@ import java.util.TimerTask;
 import me.relex.circleindicator.CircleIndicator;
 
 public class Plasmodium extends AppCompatActivity {
+    int id;
     private static ViewPager mPager;
     private static int currentPage = 0;
     private static final Integer[] XMEN= {R.drawable.plasimm1,R.drawable.plasimm2,R.drawable.plasimm3,R.drawable.plasimm4,R.drawable.plasimm5,R.drawable.plasimm6};
@@ -20,6 +23,10 @@ public class Plasmodium extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plasmodium);
+
+        Intent intent=getIntent();
+        id=intent.getIntExtra("id",1);
+        Toast.makeText(getApplicationContext(),"ID is "+id,Toast.LENGTH_SHORT).show();
         init();
     }
     private void init() {
