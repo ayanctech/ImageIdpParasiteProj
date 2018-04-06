@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#3395ee"
+    android:id="@+id/genus"
+    >
+
+        <Button
+            android:id="@+id/plasmodium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="plasmodium"
+            android:textAllCaps="true"
+            android:onClick="plasmodium"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/sarcocystis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="carcocystis"
+            android:onClick="carcocystis"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/toxoplasma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="toxoplasma"
+            android:onClick="toxoplasma"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/leucocytozoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="leucocytozoon"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/besnoitia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="besnoitia"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/haemoproteus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="haemoproteus"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/coccidia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="coccidia"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/babesia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="babesia"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/theileria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="theileria"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/leishmania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="leishmania"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/trypanosoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trypanosoma"
+            android:padding="20dp"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:background="#ff9933"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/genus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genus Level"
+        android:padding="20dp"
+        android:onClick="GenusLevel"/>
+
+    <Button
+        android:id="@+id/species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Species Level"
+        android:padding="20dp"
+        android:onClick="SpeciesLevel"/>
+
+    <Button
+        android:id="@+id/parasite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parasite Level"
+        android:padding="20dp"
+        android:onClick="ParasiteLevel"/>
+
+    <Button
+        android:id="@+id/treatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treatment"
+        android:padding="20dp"
+        android:onClick="Treatment"/>
+
+    <Button
+        android:id="@+id/diagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis"
+        android:padding="20dp"
+        android:onClick="Diagnosis"/>
+
+    <Button
+        android:id="@+id/hostparadb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host Parasite Database"
+        android:padding="20dp"
+        android:onClick="HostParasiteDatabase"/>
+
+    <Button
+        android:id="@+id/scname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scientific Name"
+        android:padding="20dp"
+        android:onClick="ScientificName"/>
+
+    <Button
+        android:id="@+id/ack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acknowledgements"
+        android:padding="20dp"
+        android:onClick="Acknowledgements"/>
+
+    <Button
+        android:id="@+id/references"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="References"
+        android:padding="20dp"
+        android:onClick="References"/>
+</LinearLayout>
