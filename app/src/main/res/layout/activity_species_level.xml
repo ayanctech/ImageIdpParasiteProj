@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:text="Apicomplexa Species"
             android:textAllCaps="false"
-            android:onClick="plasmodium"
+            android:onClick="apicomplexas"
             android:padding="20dp"
             />
 

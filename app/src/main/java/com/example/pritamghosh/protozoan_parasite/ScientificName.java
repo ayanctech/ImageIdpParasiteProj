@@ -1,10 +1,15 @@
 package com.example.pritamghosh.protozoan_parasite;
 
+import android.database.Cursor;
+import android.database.SQLException;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
+
+import java.io.IOException;
 
 public class ScientificName extends AppCompatActivity {
 
@@ -20,5 +25,32 @@ public class ScientificName extends AppCompatActivity {
                 Snackbar.make(view, "Clicked " + item, Snackbar.LENGTH_LONG).show();
             }
         });
+
+
+        DataBaseHelper myDbHelper = new DataBaseHelper(this);
+       // myDbHelper = new DataBaseHelper(this);
+
+        try {
+
+            myDbHelper.createDataBase();
+
+        } catch (IOException ioe) {
+
+            throw new Error("Unable to create database");
+
+        }
+
+        try {
+
+            myDbHelper.openDataBase();
+            Toast.makeText(getApplicationContext(),"Database connection success",Toast.LENGTH_SHORT).show();
+
+
+
+        }catch(SQLException sqle){
+
+            throw sqle;
+
+        }
     }
 }

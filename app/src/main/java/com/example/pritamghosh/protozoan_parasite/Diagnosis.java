@@ -11,6 +11,7 @@ public class Diagnosis extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_diagnosis);
 
         myWebView = findViewById(R.id.refwv);
