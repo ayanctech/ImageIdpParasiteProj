@@ -1,5 +1,6 @@
 package com.example.pritamghosh.protozoan_parasite;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -26,7 +27,8 @@ public class Diagnosis extends AppCompatActivity {
         if(myWebView.canGoBack()) {
             myWebView.goBack();
         } else {
-            super.onBackPressed();
+            //super.onBackPressed();
+            startActivity(new Intent(getApplicationContext(),OptionsPage.class));
         }
     }
 }
