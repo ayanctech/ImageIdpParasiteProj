@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pritamghosh.protozoan_parasite">
+    package="com.actech.protozoan_parasite">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/icar"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/icar"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:largeHeap="true">
+        android:theme="@style/AppTheme">
         <activity android:name=".HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,16 +23,26 @@
             </intent-filter>
         </activity>
         <activity android:name=".OptionsPage" />
-        <activity android:name=".GenusLevel" />
-        <activity android:name=".SpeciesLevel" />
-        <activity android:name=".ParasiteLevel" />
-        <activity android:name=".Treatment" />
-        <activity android:name=".Diagnosis"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".HostParasiteDatabase" />
+        <activity android:name=".GenusLevel"
+            android:parentActivityName=".OptionsPage"/>
+        <activity android:name=".SpeciesLevel"
+            android:parentActivityName=".OptionsPage"/>
+        <activity android:name=".Treatment"
+            android:parentActivityName=".OptionsPage"/>
+        <activity
+            android:name=".Diagnosis"
+            android:parentActivityName=".OptionsPage"/>
+         <!--   android:theme="@style/generalnotitle"
+         -->
+
+
+        <activity android:name=".HostParasiteDatabase"
+            android:parentActivityName=".OptionsPage"/>
+
         <activity android:name=".ScientificName" />
         <activity android:name=".Acknowledgements" />
-        <activity android:name=".References" />
+        <activity android:name=".References"
+            android:parentActivityName=".OptionsPage"/>
         <activity
             android:name=".Plasmodium"
             android:screenOrientation="landscape" />
@@ -44,7 +54,9 @@
          <activity android:name=".popup_layout"
             android:theme="@android:style/Theme.Holo.Light.Dialog" ></activity>
         -->
-        <activity android:name=".Apicomplexa"></activity>
+        <activity android:name=".Apicomplexa" />
+        <activity android:name=".popup2" />
+        <activity android:name=".Sercomastigophora"></activity>
     </application>
 
 </manifest>
