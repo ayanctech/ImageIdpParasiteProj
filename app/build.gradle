@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.example.pritamghosh.protozoan_parasite"
+        applicationId "com.actech.protozoan_parasite"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
@@ -21,18 +21,19 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
 
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'me.relex:circleindicator:1.2.2@aar'
 
     implementation 'com.jaredrummler:material-spinner:1.2.5'
 
-    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
-
-
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+    implementation 'com.flipboard:bottomsheet-commons:1.5.3'
 
 }
